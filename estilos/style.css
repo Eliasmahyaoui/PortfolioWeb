@@ -1,8 +1,8 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 #video-bg {
@@ -11,7 +11,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;   /* 🔑 ESTA ES LA CLAVE */
+  object-fit: cover;
+  /* 🔑 ESTA ES LA CLAVE */
   z-index: -1;
 }
 
@@ -26,30 +27,49 @@
   align-items: center;
 }
 
-button{
+button {
   background-color: rgb(197, 197, 197);
-  transition: background-color 0,5s;
+  transition: background-color 0, 5s;
+  animation: animacionBoton 2,5s ease-in-out 1s infinite;
 }
 
-button:hover{
+button:hover {
   background-color: beige;
 }
 
-nav{
- 
+nav {
+
   margin: 25px;
   position: fixed;
   font-size: 30px;
 }
-a{
+
+a {
   color: white;
-  margin:10px;
+  margin: 10px;
   text-decoration: none;
 }
-img{
-  max-width:100px;
+
+img {
+  max-width: 100px;
   max-width: 100px;
   text-align: center;
 }
 
 
+@keyframes animacionBoton {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+     transform: scale(1.5);
+     opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
