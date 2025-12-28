@@ -9,3 +9,4 @@ boton.addEventListener('click', function(){
     this.innerHTML="HAS ENTRADO A MI INFORMACION";
 
 });
+
