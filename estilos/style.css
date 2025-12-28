@@ -11,12 +11,11 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  /* 🔑 ESTA ES LA CLAVE */
+  object-fit: cover;/* 🔑 ESTA ES LA CLAVE */
   z-index: -1;
 }
 
-.content {
+.contenidoPrincipal {
   position: relative;
   z-index: 1;
   color: rgb(255, 255, 255);
@@ -40,12 +39,14 @@ button:hover {
 nav {
 
   margin: 25px;
-  position: fixed;
+  /*position: fixed;*/
   font-size: 30px;
+  text-align: center;
+
 }
 
 a {
-  color: white;
+  color:bisque;
   margin: 10px;
   text-decoration: none;
 }
@@ -55,7 +56,6 @@ img {
   max-width: 100px;
   text-align: center;
 }
-
 
 @keyframes animacionBoton {
   0% {
@@ -72,4 +72,7 @@ img {
     transform: scale(1);
     opacity: 1;
   }
+}
+h1{
+  color: bisque;
 }

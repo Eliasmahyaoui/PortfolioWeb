@@ -7,6 +7,7 @@ const boton = document.getElementById("boton1");
 boton.addEventListener('click', function(){
 
     this.innerHTML="HAS ENTRADO A MI INFORMACION";
+    
 
 });
 
