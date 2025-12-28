@@ -1,12 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-
-#video {
-  position: fixed;      /* fondo real */
-  inset: 0;
+#video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;    /* NO deformar */
+  object-fit: cover;   /* 🔑 ESTA ES LA CLAVE */
   z-index: -1;
-  text-align: center;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
