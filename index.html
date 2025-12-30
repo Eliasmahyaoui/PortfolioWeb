@@ -9,57 +9,62 @@
 
 <body>
 
-  <!-- VIDEO DE FONDO -->
-  <video id="video-bg" autoplay muted loop playsinline>
-    <source src="img/pinterest-video-49.mp4" type="video/mp4">
-    Tu navegador no soporta vídeo HTML5
+  <!-- video de fondo -->
+  <video id="video" autoplay muted loop playsinline>
+    <source src="img/pinterest-video-73.mp4" type="video/mp4">
   </video>
 
-  <!-- HEADER / NAV -->
-  <header id="headerGeneral">
-    <img src="img/Gemini_Generated_Image_rhnn0yrhnn0yrhnn.png" alt="Logo personal EMF" class="logo">
+  <!-- header -->
+ <header id="headerGeneral">
+  <img src="img/Gemini_Generated_Image_rhnn0yrhnn0yrhnn.png" alt="Logo personal EMF" class="logo">
 
-    <nav>
-      <a href="#sobremi">Sobre mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#sobremi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-  <!-- HERO -->
+  <!-- Botones cta -->
+  <div class="header-cta">
+    <a href="#contacto" class="btn-header">Contactar</a>
+    <a href="docs/CV_Elias_Mahyaoui.pdf" class="btn-header" download>CV</a>
+  </div>
+</header>
+
+
+
+  <!-- Principal -->
   <section class="contenidoPrincipal">
     <h1>ELIAS MAHYAOU I FELLAH</h1>
     <p class="subtitulo">Desarrollador Web</p>
     <button id="boton1">Pincha aquí si quieres saber de mí</button>
   </section>
 
-  <!-- SOBRE MI -->
+  <!-- Sobre mi -->
   <section id="sobremi" class="seccion">
     <div class="seccion-contenido">
       <div class="texto">
         <h2>Sobre mí</h2>
         <p>
-          Soy un desarrollador web en formación con una fuerte motivación por el
-          diseño digital y la creación de experiencias interactivas.
+          Soy un desarrollador web en formación con interés en crear experiencias
+          digitales modernas, accesibles y bien estructuradas.
         </p>
         <p>
-          Me especializo en HTML, CSS y JavaScript, cuidando la estructura del
-          código, la accesibilidad y la experiencia de usuario.
+          Trabajo con HTML, CSS y JavaScript aplicando buenas prácticas y diseño
+          responsive.
         </p>
       </div>
 
-      <div class="media">
-        <iframe
-          src="https://www.youtube.com/embed/TU_VIDEO"
-          title="Video presentación"
-          allowfullscreen>
-        </iframe>
-      </div>
+      <iframe
+        src="video/video presentacion.mp4"
+        title="Video presentación"
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
-  <!-- HABILIDADES -->
+  <!-- Habilidades -->
   <section id="habilidades" class="seccion">
     <h2>Habilidades</h2>
 
@@ -67,69 +72,55 @@
       <div class="skill-card">
         <img src="img/html-5-logo.svg" alt="HTML5">
         <h3>HTML5</h3>
-        <p>Estructura semántica y accesible.</p>
+        <p>Estructura semántica.</p>
       </div>
 
       <div class="skill-card">
         <img src="img/css3-logo.svg" alt="CSS3">
         <h3>CSS3</h3>
-        <p>Diseño responsive y animaciones.</p>
+        <p>Animaciones y responsive.</p>
       </div>
 
       <div class="skill-card">
         <img src="img/javascript-logo.svg" alt="JavaScript">
         <h3>JavaScript</h3>
-        <p>Interactividad y eventos dinámicos.</p>
+        <p>Interactividad y eventos.</p>
       </div>
     </div>
 
     <div class="audio-box">
       <h3>Top 5 lenguajes aprendidos</h3>
       <audio controls>
-        <source src="audio/top5-lenguajes.mp3" type="audio/mpeg">
-        Tu navegador no soporta audio
+        <source src="audio/audio de 1min.mp4" type="audio/mpeg">
       </audio>
     </div>
   </section>
 
-  <!-- PROYECTOS -->
+  <!-- Proyectos -->
   <section id="proyectos" class="seccion">
     <h2>Proyectos</h2>
 
     <div class="proyectos-grid">
       <div class="proyecto-card">
-        <img src="img/proyecto1.png" alt="Portfolio multimedia">
+        <img src="img/proyecto1.jpg" alt="Portfolio multimedia">
         <h3>Portfolio Multimedia</h3>
-        <p>
-          Landing page interactiva con vídeo, audio, animaciones y diseño
-          responsive.
-        </p>
+        <p>Landing page con vídeo, audio y animaciones CSS.</p>
       </div>
 
       <div class="proyecto-card">
-        <img src="img/proyecto2.png" alt="Proyecto web académico">
+        <img src="img/proyecto2.jpg" alt="Proyecto web">
         <h3>Proyecto Web</h3>
-        <p>
-          Proyecto académico enfocado en buenas prácticas y estructura web.
-        </p>
+        <p>Proyecto académico con buenas prácticas.</p>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
+  <!-- Contacto -->
   <section id="contacto" class="seccion contacto">
     <h2>Contacto</h2>
-
-    <p class="contacto-texto">
-      ¿Te interesa mi perfil o quieres saber más sobre mí?
-    </p>
-
-    <div class="contacto-info">
-      <p>📧 eliasmahyaoui6@hotmail.com</p>
-      <p>📍 España, Valencia</p>
-    </div>
-
-    <button class="btn-cv">Descargar CV</button>
+    <p>📧 eliasmahyaoui6@hotmail.com</p>
+    <p>📍 España,Valencia</p>
+    <button>Descargar CV</button>
   </section>
 
   <script src="js/javascript.js"></script>
