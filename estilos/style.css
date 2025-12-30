@@ -119,7 +119,7 @@ iframe {
 
 /* Habilidades */
 .skills-grid {
-  display: grid;
+  display:inline-flex;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
@@ -220,4 +220,8 @@ iframe {
 .btn-header:hover {
   background: bisque;
   color: black;
+}
+
+h2{
+  color: bisque;
 }
