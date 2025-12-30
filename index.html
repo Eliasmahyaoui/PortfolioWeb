@@ -1,60 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Fullscreen</title>
-    <link rel="stylesheet" href="estilos/style.css">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elias Mahyaoui Fellah | Portfolio Multimedia</title>
+  <link rel="stylesheet" href="estilos/style.css" />
 </head>
 
 <body>
-    <!--Header con su nav para la navegacion de la pagina web-->
-    <header>
-        <img src="img/Gemini_Generated_Image_rhnn0yrhnn0yrhnn.png" alt="">
-        <nav>
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
 
+  <!-- VIDEO DE FONDO -->
+  <video id="video-bg" autoplay muted loop playsinline>
+    <source src="img/pinterest-video-49.mp4" type="video/mp4">
+    Tu navegador no soporta vídeo HTML5
+  </video>
 
-    </header>
+  <!-- HEADER / NAV -->
+  <header id="headerGeneral">
+    <img src="img/Gemini_Generated_Image_rhnn0yrhnn0yrhnn.png" alt="Logo personal EMF" class="logo">
 
-    <!--video para el fondo del portfolio-->
-    <video id="video-bg" autoplay muted loop playsinline>
-        <source src="img/pinterest-video-49.mp4" type="video/mp4">
-        Tu navegador no soporta video HTML5.
-    </video>
+    <nav>
+      <a href="#sobremi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-    <!--Contenido principal del portfolio-->
-    <div class="contenidoPrincipal">
-        <h1>ELIAS MAHYAOUI FELLAH </h1>
-        <br>
-        <button id="boton1">
-            <h2>Pincha aqui si quieres saber de mi</h2>
-        </button>
+  <!-- HERO -->
+  <section class="contenidoPrincipal">
+    <h1>ELIAS MAHYAOU I FELLAH</h1>
+    <p class="subtitulo">Desarrollador Web</p>
+    <button id="boton1">Pincha aquí si quieres saber de mí</button>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobremi" class="seccion">
+    <div class="seccion-contenido">
+      <div class="texto">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un desarrollador web en formación con una fuerte motivación por el
+          diseño digital y la creación de experiencias interactivas.
+        </p>
+        <p>
+          Me especializo en HTML, CSS y JavaScript, cuidando la estructura del
+          código, la accesibilidad y la experiencia de usuario.
+        </p>
+      </div>
+
+      <div class="media">
+        <iframe
+          src="https://www.youtube.com/embed/TU_VIDEO"
+          title="Video presentación"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="seccion">
+    <h2>Habilidades</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="img/html-5-logo.svg" alt="HTML5">
+        <h3>HTML5</h3>
+        <p>Estructura semántica y accesible.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/css3-logo.svg" alt="CSS3">
+        <h3>CSS3</h3>
+        <p>Diseño responsive y animaciones.</p>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/javascript-logo.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Interactividad y eventos dinámicos.</p>
+      </div>
     </div>
 
-    <section id="sobremi">
-        <h1>SOBRE MI</h1>
-    </section>
-    <br>
-    <section id="habilidades">
-        <h1>HABILIDADES</h1>
-    </section>
-    <br>
-    <section id="proyectos">
-        <h1>PROYECTOS</h1>
-        <section id="contacto">
-            <h1>CONTACTO</h1>
-        </section>
+    <div class="audio-box">
+      <h3>Top 5 lenguajes aprendidos</h3>
+      <audio controls>
+        <source src="audio/top5-lenguajes.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio
+      </audio>
+    </div>
+  </section>
 
-        <script src="js/javascript.js"></script>
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="seccion">
+    <h2>Proyectos</h2>
 
+    <div class="proyectos-grid">
+      <div class="proyecto-card">
+        <img src="img/proyecto1.png" alt="Portfolio multimedia">
+        <h3>Portfolio Multimedia</h3>
+        <p>
+          Landing page interactiva con vídeo, audio, animaciones y diseño
+          responsive.
+        </p>
+      </div>
+
+      <div class="proyecto-card">
+        <img src="img/proyecto2.png" alt="Proyecto web académico">
+        <h3>Proyecto Web</h3>
+        <p>
+          Proyecto académico enfocado en buenas prácticas y estructura web.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+
+    <p class="contacto-texto">
+      ¿Te interesa mi perfil o quieres saber más sobre mí?
+    </p>
+
+    <div class="contacto-info">
+      <p>📧 eliasmahyaoui6@hotmail.com</p>
+      <p>📍 España, Valencia</p>
+    </div>
+
+    <button class="btn-cv">Descargar CV</button>
+  </section>
+
+  <script src="js/javascript.js"></script>
 </body>
-
 </html>

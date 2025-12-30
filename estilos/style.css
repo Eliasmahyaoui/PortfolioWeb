@@ -2,77 +2,201 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* VIDEO FONDO */
 #video-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover;/* 🔑 ESTA ES LA CLAVE */
+  object-fit: cover;
   z-index: -1;
 }
 
-.contenidoPrincipal {
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav a {
+  color: bisque;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 20px;
   position: relative;
-  z-index: 1;
-  color: rgb(255, 255, 255);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: bisque;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.contenidoPrincipal {
   height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
+.subtitulo {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+/* BOTONES */
 button {
-  background-color: rgb(197, 197, 197);
-  transition: background-color 0, 5s;
-  animation: animacionBoton 2,5s ease-in-out 1s infinite;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: rgb(197,197,197);
+  border: none;
+  cursor: pointer;
+  animation: animacionBoton 2.5s ease-in-out infinite;
 }
 
 button:hover {
   background-color: beige;
 }
 
-nav {
+/* SECCIONES */
+.seccion {
+  padding: 140px 10%;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+  color: white;
+}
 
-  margin: 25px;
-  /*position: fixed;*/
-  font-size: 30px;
+.seccion h2 {
   text-align: center;
-
+  margin-bottom: 40px;
 }
 
-a {
-  color:bisque;
-  margin: 10px;
-  text-decoration: none;
+/* SOBRE MI */
+.seccion-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
 }
 
-img {
-  max-width: 100px;
-  max-width: 100px;
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+/* HABILIDADES */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-card img {
+  width: 60px;
+}
+
+/* AUDIO */
+.audio-box {
+  margin-top: 40px;
   text-align: center;
 }
 
+/* PROYECTOS */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.proyecto-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-10px);
+}
+
+.proyecto-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACTO */
+.contacto {
+  text-align: center;
+}
+
+.contacto-info {
+  margin: 20px 0;
+}
+
+/* ANIMACIÓN */
 @keyframes animacionBoton {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-     transform: scale(1.5);
-     opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); opacity: 0.6; }
+  100% { transform: scale(1); }
 }
-h1{
-  color: bisque;
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .seccion-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  .contenidoPrincipal h1 {
+    font-size: 26px;
+  }
 }
